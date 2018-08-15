@@ -1,0 +1,15 @@
+/*make this work:
+.display-4 h1 {
+    font-style: bold;
+}
+*/
+
+#letters {
+    background-color: darkgreen;
+    border: darkgreen;
+}
+
+#clue {
+    background-color: lightgreen;
+    border: lightgreen;
+}
