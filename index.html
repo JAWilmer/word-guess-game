@@ -2,42 +2,65 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title>National Parks Word Guess Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="resetsheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="javascript" type="javascript/javascript" href="assets/javascript/game.js">
+  <meta charset="UTF-8">
+  <title>National Parks Word Guess Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="resetsheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
-        <div class="container-fluid">
-<!--might make this partial width by putting in a constraining container, look in bootstrap utilities for help-->
-                <div class="jumbotron jumbotron-fluid">
-                        <div class="container">
-                          <h1 class="display-4">Can you guess this National Park?</h1>
-                          <p class="lead">Instructions here</p>
-                        </div>
-                      </div>
+  <div class="container">
+
+    <div class="jumbotron">
+      <!--insert watermark nps image behind jumbo-->
+      <div class="container">
+        <h1 class="display-4">Can you guess this National Park?</h1>
+        <br>
+        <p class="lead">Use the alphabet buttons to enter your letter guesses. Keep your eye on the counter - it will decrease
+          by 1 for each incorrect letter guess.</p>
 
 
-<!--need to add alert in here somewhere to show how user is doing/ possibly add a progress bar?-->
-            <!--carousel to host images of nps, goes under game-->
-                <div class="carousel-item">
-                        <img src="..." alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>...</h5>
-                          <p>...</p>
-                        </div>
+      </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+
+    <div class="card" style="widows: 100%;">
+        <div class="card-header">
+            <h5 class="card-title">Your National Park is:  <!--THIS IS WHERE THE LETTER GUESSES WILL GO --></h5>
+          </div>
+        
+
+      <div class="card-body">
+        <a href="#" class="btn btn-primary" id="letters">THIS IS WHERE THE LETTER BUTTONS WILL GO</a>
+        <!--how do i get space between these buttons?-->
+        <a href="#" class="btn btn-primary" id="clue">Click for clue!</a>
+        <!--letter count for progress, justify right inline with clue-->
+      </div>
+    </div>
 
 
 
-                      </div> <!--dive to close container-->
 
-                ...
-              </div>
 
-              
+
+
+
+  </div>
+  <!--carousel to host images of nps, goes under game-->
+  <div class="carousel-item">
+    <img src="..." alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>...</h5>
+      <p>...</p>
+    </div>
+  </div>
+  </div>
+
+
 
 
 </body>
