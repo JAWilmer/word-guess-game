@@ -17,28 +17,38 @@
     <div class="jumbotron">
       <!--insert watermark nps image behind jumbo-->
       <div class="container">
-        <h1 class="display-4">Can you guess this National Park?</h1>
-        <br>
-        <p class="lead">Use the alphabet buttons to enter your letter guesses. Keep your eye on the counter - it will decrease
-          by 1 for each incorrect letter guess.</p>
-
-
+        <h1 class="display-4">Can you guess the National Park?</h1>
       </div>
     </div>
 
     <script src="assets/javascript/game.js"></script>
 
-    <div class="card" style="widows: 100%;">
-        <div class="card-header">
-            <h5 class="card-title">Your National Park is:  <!--THIS IS WHERE THE LETTER GUESSES WILL GO --></h5>
-          </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="inside-card">
+          <p class="lead">Use the alphabet buttons to enter your letter guesses. Keep your eye on the counter - it will decrease by 1 for each incorrect letter guess.</p>
+        </div>
+
+        <div id="hold"></div>
         
 
+
+
+      </div>
+
+
       <div class="card-body">
-        <a href="#" class="btn btn-primary" id="letters">THIS IS WHERE THE LETTER BUTTONS WILL GO</a>
-        <!--how do i get space between these buttons?-->
-        <a href="#" class="btn btn-primary" id="clue">Click for clue!</a>
-        <!--letter count for progress, justify right inline with clue-->
+        <div class="inside-card">
+          <h3>this is where i want my word spaces</h3>
+          <br>
+          
+          <button type="button" class="btn btn-primary" id="letters">this is where i want my alphabet</button>
+
+          <p id="countRemaining">count remaining should go here</p>
+
+          <button type="button" class="btn btn-primary" id="clue">Click for a clue!</button>
+          <p id="hint"></p>
+        </div>
       </div>
     </div>
 
