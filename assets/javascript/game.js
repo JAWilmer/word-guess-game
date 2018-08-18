@@ -63,18 +63,13 @@ window.onload = function () {
     showLetterCount.innerHTML = "Guesses Remaining:     " +letterCount;
     if (letterCount < 1) {
       showLetterCount.innerHTML = "Game Over";
-      showLossCount.innerHTML = "Losses:" -+ 1;
-      window.location.reload(true);
-      $('#parkModal').modal(show);
-
+      showLossCount.innerHTML = "Losses:" -= 1;
 
     }
     for (var i = 0; i < storedGuesses.length; i++) {
       if (counter + space === storedGuesses.length) {
         showLetterCount.innerHTML = "You Won!";
-        showWinCount.innerHTML = "Wins:" + 1;
-        window.location.reload(true);
-        $('#parkModal').modal(show);
+        showWinCount.innerHTML = "Wins:" += 1;
       }
     }
   }
