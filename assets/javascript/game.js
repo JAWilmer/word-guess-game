@@ -63,7 +63,8 @@ window.onload = function () {
     showLetterCount.innerHTML = "Guesses Remaining:     " +letterCount;
     if (letterCount < 1) {
       showLetterCount.innerHTML = "Game Over";
-      showLossCount.innerHTML = "Losses:" -+ 1;
+      showLossCount.innerHTML = "Losses:" +(- 1);
+      showWinCount.innerHTML = "Wins:" + 0;
 
 
 
@@ -72,6 +73,7 @@ window.onload = function () {
       if (counter + space === storedGuesses.length) {
         showLetterCount.innerHTML = "You Won!";
         showWinCount.innerHTML = "Wins:" + 1;
+        showLossCount.innerHTML = "Losses:" + 0;
       }
     }
   }
