@@ -1,78 +1,98 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>National Parks Word Guess Game</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <link rel="resetsheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="resetsheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>NPS Word Guess Game</title>
 </head>
 
 <body>
-  <div class="container">
-
-    <div class="jumbotron">
-      <!--insert watermark nps image behind jumbo-->
-      <div class="container">
-        <h1 class="display-4">Can you guess the National Park?</h1>
-      </div>
-    </div>
-
-    <script src="assets/javascript/game.js"></script>
-
-    <div class="card">
-      <div class="card-header">
-        <div class="inside-card">
-          <p class="lead">Use the alphabet buttons to enter your letter guesses. Keep your eye on the counter - it will decrease by 1 for each incorrect letter guess.</p>
+    <div class="container">
+        <div class="jumbotron">
+            <h3 class="display-5">A National Parks Word Guess Game</h3>
+            <br>
+            <p class="lead">“In every walk with Nature one receives far more than he seeks." ~John Muir</p>
         </div>
 
-        <div id="hold"></div>
-        
+        <div class="card">
+            <div class="card-header">
+                <h5 class="display-5" id="winCount">Wins: </h5>
+                <div class="inside-header">
+                    <p class="lead">How well do you know your national parks?</p>
+                    <p class="lead">Let's get started! Use the letter buttons to enter your guesses.</p>
+                </div>
+                <h5 class="display-5" id="lossCount">Losses: </h5>
+            </div>
 
+            <div class="card-body">
+                <script src="assets/javascript/game.js"></script>
+                <!-- "hold" is the letter blanks -->
+                <div id="hold">
+                </div>
 
+                <div class="alphabet-card">
+                    <!-- abc sends the alphabet ul to buttons -->
+                    <div id="abc">
+                    </div>
+                </div>
 
-      </div>
+                <div class="card" id="remaining-guesses">
+                    <h5 class="display-5" id="myLetterCount"></h5>
+                </div>
 
+                <div class="mother">
+                    <button type="button" class="btn" id="hint"><h5>Hint</h5>
+                    </button>
+                </div>
 
-      <div class="card-body">
-        <div class="inside-card">
-          <h3>this is where i want my word spaces</h3>
-          <br>
-          
-          <button type="button" class="btn btn-primary" id="letters">this is where i want my alphabet</button>
+                <div class="mother">
+                    <div class="card" id="clue-card">
+                        <h5 class="display-5" id="clue"></h5>
+                    </div>
+                </div>
 
-          <p id="countRemaining">count remaining should go here</p>
-
-          <button type="button" class="btn btn-primary" id="clue">Click for a clue!</button>
-          <p id="hint"></p>
+                <div class="mother">
+                    <button type="button" class="btn" id="reset"><h5>Play Again</h5>
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
+        <!-- Modal -->
+        <div class="modal fade" id="parkModal" tabindex="-1" role="dialog" aria-labelledby="parkModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="parkModalTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+<!--                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="../magic-8/images/jayma-leavengood-574431-unsplash.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../magic-8/images/jonas-tebbe-334224-unsplash.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../magic-8/images/usa-1669704_1920.jpg" alt="Third slide">
+                                </div>
+ -->                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-  </div>
-  <!--carousel to host images of nps, goes under game-->
-  <div class="carousel-item">
-    <img src="..." alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>...</h5>
-      <p>...</p>
-    </div>
-  </div>
-  </div>
-
-
-
-
 </body>
 
 </html>
