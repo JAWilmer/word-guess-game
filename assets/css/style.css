@@ -1,94 +1,161 @@
-
-h1 {
-    font-style: bold;
+body {
+    color:rgb(4, 39, 39);
+    background: url("../images/sasha-stories-320885-unsplash.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-h3 {
+.jumbotron {
+    background-color: rgb(4, 39, 39);
+    padding-bottom: 10px;
     text-align: center;
+    color: white;
 }
 
-.inside-card {
-    padding: 30px 30px 0 30px;
+#myLetterCount {
+    color: rgb(17, 143, 143);
 }
 
-#letters {
-    display: block;
-    margin: 20px 0 20px 0;
-    background-color: darkgreen;
-    border: darkgreen;
-  }
+.card {
+    border-color: rgb(4, 39, 39);
+}
 
-  .active {
-    @include opacity;
-    cursor:default;
-      
-    &:hover{
-        @include fade;
-        @include opacity;
-      }
-  }
+.card-header {
+    background-color:  rgb(4, 39, 39);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: inline-flex;
+    padding: 30px;
+}
 
+.inside-header {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
 
-#alphabet {
-    @include clear;
-    margin:15px auto;
-    padding:0;
-    max-width:900px;
-  }
+#winCount {
+    display: inline-flex;
+    color: white;
+    height: 90px;
+    width: 115px;
+    padding: 15px;
+    background-color:  rgb(17, 143, 143);
+    border-color: white;
+    border-radius: 10% 25%; 
+}
+
+#lossCount {
+display: inline-flex;
+    float: right;
+    color: white;
+    height: 90px;
+    width: 115px;
+    padding: 15px;
+    background-color: orangered;
+    border-color: white;
+    border-radius: 25% 10%; 
+}
+
+.card-body {
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Mystery Word */
+#my-word {
+    text-align: center;
+    padding-bottom: 20px;
+}
   
-#alphabet li {
-    float:left;
-    margin: 0 10px 10px 0;
-    list-style:none;
-    width:35px;
-    height:30px;
-    padding-top:10px;
-    background:$white;
-    color:$base-color;
-    cursor:pointer;
-    @include corners(5px);
-    border: solid 1px $white;
-      
-      &:hover{
-        background:$base-color;
-        border: solid 1px $white;
-        color:$white;
-      }
-  }
-  
-
-
-
-
-  #my-word {
-    margin: 0;
-    display: block;
-    padding: 0;
-    display:block;
-  }
-  
-  #my-word li {
+#my-word li {
+    clear: both;
     position: relative;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     display: inline-block;
     padding: 0 10px;
     font-size:1.6em;
-  }
-  
-  #clue {
-    display: block;
-    margin-top: 20px;
-    background-color: lightgreen;
-    border: lightgreen;
 }
-  
-  #myRemaining{
-    text-align:center;
-    display:block;
-  }
 
- 
+.alphabet-card {
+    margin: 0 auto;
+    padding:0 50px 20px 50px;
+    position: relative;
+    clear: both;
+}
+ /* Alphabet buttons */ 
+#alphabet li {
+    float:left;
+    margin: 0 15px 15px 0;
+    list-style:none;
+    width:40px;
+    height:40px;
+    padding: 10px;
+    background: rgb(17, 143, 143);
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10%;
+}
 
+#alphabet li:hover{
+    background: rgb(4, 39, 39);
+}
 
-  
+#remaining-guesses {
+    clear: both;
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    height: 70px;
+    margin: 0 auto;
+    border: none;
+}
+
+/* Hint button */
+#hint {
+    clear: both;
+    position: relative;
+    margin: 0 auto; 
+    padding-top: 13px;
+    background-color: orangered;
+    color: white;
+}
+
+.mother {
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Clue */
+#clue-card {
+    clear: both;
+    position: relative;
+    margin: 0 auto; 
+    border-color: white;
+    color: orangered;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+}
+
+#reset {
+    clear: both;
+    position: relative;
+    margin: 0 auto; 
+    background-color:rgb(4, 39, 39);
+    border:rgb(4, 39, 39);
+    color: white;
+    width: 175px;
+}
+
