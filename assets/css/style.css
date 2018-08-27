@@ -12,6 +12,8 @@ body {
     padding-bottom: 10px;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 #myLetterCount {
@@ -29,17 +31,18 @@ body {
     text-align: center;
     display: inline-flex;
     padding: 30px;
+    justify-content: center;
 }
 
 .inside-header {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 40px 0 40px;
+
 }
 
 #winCount {
-    display: inline-flex;
     color: white;
     height: 90px;
     width: 115px;
@@ -50,8 +53,6 @@ body {
 }
 
 #lossCount {
-display: inline-flex;
-    float: right;
     color: white;
     height: 90px;
     width: 115px;
