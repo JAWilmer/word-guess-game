@@ -1,162 +1,126 @@
-body {
-    color:rgb(4, 39, 39);
-    background: url("../images/sasha-stories-320885-unsplash.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+/* COLOR CODES
+dark grey = RGB (51,50,55)
+medium grey = #7D7C7F
+light grey = #E4E4E4
+ */
+
+body{
+	background: url("../images/52d51e81a5cbc09614afd6eb8920779d.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.jumbotron {
-    background-color: rgb(4, 39, 39);
-    padding-bottom: 10px;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
+.container {
+	background-color:#7D7C7F;
+	border-radius: 5px; 
+	margin: 40px;
+	padding: 40px;
+	text-align: center;
 }
 
-#myLetterCount {
-    color: rgb(17, 143, 143);
+header {
+	color: darkred;
+	text-align: center;
+	font-family: 'Tangerine', cursive;
+	font-size: 65px;
 }
 
-.card {
-    border-color: rgb(4, 39, 39);
+#imageHolder {
+	color: white;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 25px;
+	padding: 20px 20px 0px 20px;
+	margin: 40px 20px 20px 20px;
+}
+.text-left {
+	color: #7D7C7F;
+}
+.responsive {
+    width: 100%;
+    height: auto;
 }
 
-.card-header {
-    background-color:  rgb(4, 39, 39);
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    display: inline-flex;
-    padding: 30px;
-    justify-content: center;
+#startBtn{
+	background-color: #19264C;
+	border-color: #19264C;
+	color: white;
+	font-family: 'M PLUS Rounded 1c', sans-serif; 	
+	font-size: 25px;
+	padding: 20px;
+	margin: 40px;
+	border-radius: 5px; 
 }
 
-.inside-header {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 40px 0 40px;
-
+#timeRemaining {
+	background-color:darkred;
+	font-family: 'M PLUS Rounded 1c', sans-serif; 	
+	font-size: 25px;
+	color: white;
+	padding: 20px;
+	margin: 40px;
+	border-radius: 5px; 
 }
 
-#winCount {
-    color: white;
-    height: 90px;
-    width: 115px;
-    padding: 15px;
-    background-color:  rgb(17, 143, 143);
-    border-color: white;
-    border-radius: 10% 25%; 
+#questionHolder {
+	background-color: #19264C;
+	font-family: 'M PLUS Rounded 1c', sans-serif; 	
+	font-size: 25px;
+	color: white;
+	padding: 20px;
+	margin: 40px;
+	border-radius: 5px; 
 }
 
-#lossCount {
-    color: white;
-    height: 90px;
-    width: 115px;
-    padding: 15px;
-    background-color: orangered;
-    border-color: white;
-    border-radius: 25% 10%; 
+#currentQuestion {
+	background-color:darkred;
+	font-family: 'M PLUS Rounded 1c', sans-serif; 	
+	font-size: 25px;
+	color: white;
+	padding: 20px;
+	margin: 40px;
+	border-radius: 5px; 
 }
 
-.card-body {
-    padding: 20px 30px 20px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.thisChoice:hover{
+	background-color:#7D7C7F;
+	font-family: 'M PLUS Rounded 1c', sans-serif; 	
+	font-size: 25px;
+	color: #19264C;
+	border-radius: 5px;
 }
 
-/* Mystery Word */
-#my-word {
-    text-align: center;
-    padding-bottom: 20px;
-}
-  
-#my-word li {
-    clear: both;
-    position: relative;
-    list-style: none;
-    margin: 0 auto;
-    display: inline-block;
-    padding: 0 10px;
-    font-size:1.6em;
+.btn-primary,.reset{
+	background-color: #19264C;
+	color: white;
+	font-family: 'M PLUS Rounded 1c', sans-serif; 	
+	font-size: 30px;
+	font-size: 30px;
+	padding: 20px;
+	margin-top: 60px;
 }
 
-.alphabet-card {
-    margin: 0 auto;
-    padding:0 50px 20px 50px;
-    position: relative;
-    clear: both;
-}
- /* Alphabet buttons */ 
-#alphabet li {
-    float:left;
-    margin: 0 15px 15px 0;
-    list-style:none;
-    width:40px;
-    height:40px;
-    padding: 10px;
-    background: rgb(17, 143, 143);
-    color: white;
-    cursor:pointer;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 10%;
+.btn-primary:hover, .reset:hover{
+	background-color: #19264C;
+	font-family: 'M PLUS Rounded 1c', sans-serif; 	
+	font-size: 30px;
 }
 
-#alphabet li:hover{
-    background: rgb(4, 39, 39);
+#message, #finalMessage{
+	color: #19264C;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 30px;
 }
 
-#remaining-guesses {
-    clear: both;
-    position: relative;
-    margin-top: 20px;
-    padding: 10px;
-    height: 70px;
-    margin: 0 auto;
-    border: none;
-}
 
-/* Hint button */
-#hint {
-    clear: both;
-    position: relative;
-    margin: 0 auto; 
-    padding-top: 13px;
-    background-color: orangered;
-    color: white;
-}
 
-.mother {
-    padding: 10px 0 10px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+#jpg{
+	margin-bottom: 30px;
+} 
 
-/* Clue */
-#clue-card {
-    clear: both;
-    position: relative;
-    margin: 0 auto; 
-    border-color: white;
-    color: orangered;
-    width: 70%;
-    justify-content: center;
-    text-align: center;
-}
-
-#reset {
-    clear: both;
-    position: relative;
-    margin: 0 auto; 
-    background-color:rgb(4, 39, 39);
-    border:rgb(4, 39, 39);
-    color: white;
-    width: 175px;
-}
-
+/* @media screen and (max-width:640px){
+	.container{
+		width: 500px;
+		margin-top: 200px;
+		size: 200%;
+	}	
+}  */
