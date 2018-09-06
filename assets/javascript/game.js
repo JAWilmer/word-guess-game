@@ -70,14 +70,13 @@ var losses= 0; //Player losses
     if (letterCount < 1) {
       showLetterCount.innerHTML = "Game Over";
       losses++;
+      letterCount=10;
       showLossCount.innerHTML = "Losses:  " + losses;
       }    
       if (counter + space === storedGuesses.length) {
         showLetterCount.innerHTML = "You Won!";
         wins++;
         showWinCount.innerHTML = "Wins:   " + wins;
-      for (var i = 0; i < storedGuesses.length; i++) {
-      }
     }
   }
 
